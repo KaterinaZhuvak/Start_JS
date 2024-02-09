@@ -19,7 +19,7 @@
 // //   //   let result_1 = 60,
 // // }
 // // console.log(result);
-// "use strict";
+"use strict";
 // // const str = "Font Awesome";
 // // const price = 8;
 // // const age = 18;
@@ -111,8 +111,101 @@ console.log(isFail);
 
 //! Напишіть скрипт, який знаходить обсяг циліндра висотою 10м і діаметром основи 4м , результат та дані повинні зберігатися в змінних
 
-const radius = +"2*2";
-const height = +"10";
-const pi = +"3.14";
-let area = +pi * +height * +radius;
-console.log(area);
+// const radius = +"2*2";
+// const height = +"10";
+// const pi = +"3.14";
+// let area = +pi * +height * +radius;
+// console.log(area);
+const single = "одинарні лапки";
+const double = "подвійні лапки";
+const backstrips = `зворотні лапки`;
+
+let guestList = "Гості: \n Іван \n Степан \n Петро";
+console.log(guestList);
+
+const name = "Marshal";
+console.log(`Name: ${name}`);
+
+// let str = "Op";
+// str = "o" + str[1];
+// console.log(str);
+// console.log(str.length);
+
+// const str = "я Барт Сімсон, я погаджно вчуся в сімсон школі";
+// console.log(str.indexOf("я", 2));
+// console.log(str.includes("сім", 2));
+
+const massage = "Mango " + "is " + "happy ";
+console.log(massage);
+
+let result;
+result = 5 / "2";
+console.log(result);
+console.log(typeof result);
+
+const str = "Успіх - це не випадковість, а результат постійного старання";
+console.log(str.startsWith("Усп"));
+console.log(str.endsWith("ння"));
+
+const title = "Welcome";
+console.log(title.trim());
+console.log(title.padEnd(13, "("));
+console.log(title.padStart(17, ")"));
+
+// !Створити змінну, яка містить рядок з вашим ім'ям. Використовуючи метод .charAt(), вивести перший символ вашого імені в консоль.
+// const name = "Kate";
+// console.log(name.charAt(0));
+
+//! Створити змінну, яка містить рядок з вашим ім'ям та прізвищем. Використовуючи метод .indexOf(), знайти і вивести в консоль позицію, на якій знаходиться пробіл між ім'ям та прізвищем
+const fullName = "Zhuvak Kateryna";
+console.log(fullName.indexOf(" "));
+
+// !Створити змінну, яка містить рядок з вашим ім'ям. Використовуючи метод .replace(), замінити першу літеру вашого імені на символ "@" та вивести результат в консоль.
+// const name = "KKateryna";
+// console.log(name.replace("K", "@"));
+
+// !Створити змінну, яка містить рядок зі словом "JavaScript". Використовуючи метод .substring(), вивести підстроку, яка містить перші 4 символи слова "Java".
+let subtitle = "JavaScript";
+console.log(subtitle.substring(0, 4));
+
+// !Напиши скрипт який виведе рядок в форматі: “Гість x y поселяється в n номер g”, підставивши замість x, y, n, g значення змінних
+
+// let name = "Анатолій";
+// let surname = "Шацький";
+// let camber = 211;
+// let hotel = "Hotel";
+// console.log();
+// let surname = alert("Enter your surname:", "");
+// let name = prompt("Enter your name:", "");
+// let aprtment = +prompt("Enter your room number:", "");
+// let hotek = prompt("Enter your hotel:", "");
+// let mess = alert(
+//   "Гість ${name} ${surname}  поселяється в ${hotek} номер ${aprtment}"
+// );
+// console.log(mess);
+
+let balance = "Ваш баланс попвненно на 1";
+console.log(balance.padEnd(30, "0"));
+
+//Написати скрипт пошуку в рядку. Дано
+//const blacklistedWord1 = 'спам';
+//const blacklistedWord2 = 'розпродаж';
+// const blacklistedWord1 = "спам";
+// const blacklistedWord2 = "розпродаж";
+// const blacklistedWord3 = "кампанія";
+// const string1 = "Привіт, я Ілон Маск, це не спам, пропоную тобі мільйон!";
+// const string2 = "Найбільший РОЗПРОДАЖ цього тижня, не пропустіть!";
+// const string3 = "Рекламна кампанія #jsIsAwesome";
+// console.log(string1.includes(blacklistedWord1));
+// console.log(string2.includes(blacklistedWord2));
+// console.log(string3.includes(blacklistedWord3));
+
+const totalMinutes = prompt("Введіть кількість хвилин", "");
+const numberHours = totalMinutes / 60;
+const hours = Math.floor(numberHours % 24);
+const days = Math.floor(numberHours / 24);
+const minutes = totalMinutes % 60;
+const modeMinutes = String(minutes).padStart(2, "0");
+const modeHours = String(hours).padStart(2, "0");
+alert(`${days} days ${modeHours}:${modeMinutes}`);
+console.log(`${days} days ${modeHours}:${modeMinutes}`);
