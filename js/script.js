@@ -170,19 +170,19 @@ console.log(subtitle.substring(0, 4));
 
 // !Напиши скрипт який виведе рядок в форматі: “Гість x y поселяється в n номер g”, підставивши замість x, y, n, g значення змінних
 
-// let name = "Анатолій";
-// let surname = "Шацький";
-// let camber = 211;
-// let hotel = "Hotel";
-// console.log();
-// let surname = alert("Enter your surname:", "");
-// let name = prompt("Enter your name:", "");
-// let aprtment = +prompt("Enter your room number:", "");
-// let hotek = prompt("Enter your hotel:", "");
-// let mess = alert(
-//   "Гість ${name} ${surname}  поселяється в ${hotek} номер ${aprtment}"
-// );
-// console.log(mess);
+ let name = "Анатолій";
+ let surname = "Шацький";
+ let camber = 211;
+ let hotel = "Hotel";
+ let Surname = alert("Enter your surname:", "");
+ let Name = prompt("Enter your name:", "");
+ let aprtment = +prompt("Enter your room number:", "");
+ let hotek = prompt("Enter your hotel:", "");
+ let mess = alert(
+   "Гість `${Name}` `${Surname}`  поселяється в `${hotek}` номер `${aprtment}`"
+ );
+ console.log(mess);
+
 
 let balance = "Ваш баланс попвненно на 1";
 console.log(balance.padEnd(30, "0"));
@@ -209,3 +209,131 @@ const modeMinutes = String(minutes).padStart(2, "0");
 const modeHours = String(hours).padStart(2, "0");
 alert(`${days} days ${modeHours}:${modeMinutes}`);
 console.log(`${days} days ${modeHours}:${modeMinutes}`);
+
+//! Navigator-за допомогою нього ми можемо отримати інформацію про браузер та операцийну сістему
+// !BOM
+
+// console.log(navigator.userAgent);
+// alert(location.href);
+// if(confirm("Перейті на сайт Вікіпедія?")){
+//     location.href="https://wikipedia.org"
+// }
+
+//! DOM-навігація по документу
+// const htmlElement = document.documentElement;
+// const headElement = document.head;
+// const bodyElement = document.body;
+
+// console.log(htmlElement)
+// console.log(headElement)
+// console.log(bodyElement)
+const item = document.querySelector(".item")
+const parentElementNode = item.parentNode;
+console.log(parentNode);  //!elem.parentNode - вибере батька elem
+
+//! elem.childNodes - псевдомасив зберігає всі дочірні елементи, включаючи текстові.
+const  childElementNode = item.childNodes;
+console.log(childElementNode);
+
+// !elem.children - псевдомасив зберігає тільки дочірні вузли-елементи, тобто
+// !відповідні тегам.
+
+const childrenElem =  parentElementNode.children;
+console.log(childrenElem);
+
+//!elem.firstChild - вибере перший дочірній елемент всередині elem, включаючи текстові вузли.
+
+const container = document.querySelector(".container")
+const firstChildElement =  container.firstElementChild;
+console.log(`Перший дочірній елемент:${firstChildElement}`);
+const lastChild =  container.last6ElementChild;
+console.log(`Останній дочірній елемент(Включаючи текстові вузли ):${lastChild}`);
+const lastElementChild =  container.last6ElementChild;
+console.log(`Останній дочірній елемент:${lastElementChild}`)
+
+const  secondElement = firstChildElement.nextElementSibling
+console.log(`Отримання попереднього сусіда:${lastElementChild}`);
+
+const thirdElement = secondElement.nextElementSibling;
+
+
+const firstParagraph =  document.querySelector("p")
+
+console.log(`First element <p>: ${firstParagraph}`);
+
+const allParagraphs = document.querySelectorAll("p")
+const secondParagraph = document.querySelector(".second")
+console.log(`Second element <p>: ${secondParagraph}`);
+
+const btn = document.getElementsById("btn");
+// const button = document.querySelector("#btn");
+//value:ця властивисть містить поточний текстовий вміст елементів: input, select, textarea.вона допомогає отриматиабо змінювати значення елементів.
+const btnChangeValue = document.querySelector(".btn-input");
+const inputValue = document.querySelector(".input");
+
+btnChangeValue.addEventListener("click", () => {
+  inputValue.value = "New value";
+});
+
+const checkbox = document.getElementById("checkbox");
+const btnStageChange = document.querySelector(".btn-state");
+btnStageChange.addEventListener("click", () => {
+  checkbox.checked = !checkbox.checked;
+});
+//! name = властивість зберігає значення вказане в  HTML атрибуті name.
+//!Зазвичай буде застосовуватись для відправки формна сервері
+
+// const showBtnState = document.querySelector(".btn-show");
+// const userName = document.querySelector("#usernameInput");
+// showBtnState.addEventListener("click", () => {
+//   alert("Username is:" + userName.name);
+//   alert("Username is:" + userName.value);
+// });
+
+//! src
+
+let image = document.getElementById("image");
+
+image.addEventListener("click", () => {
+  image.src =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI-SaYWlXmVicHWYEEpRgrmFir507tWQk3pA&usqp=CAU";
+});
+
+// !elem.textContent — властивість, містить текстовий контент всередині елемента. Доступно для запису, при чому незалежно що буде передано в textContent, дані завжди будуть записані як текст.
+const changeBtn = document.querySelector(".change-text");
+const text = document.querySelector(".text");
+changeBtn.addEventListener("click", () => {
+  text.textContent = "New text";
+});
+text.style.backgroundColor = "yellow";
+text.style.fontSize = "40px";
+text.style.borderRadius = "10px";
+text.style.padding = "40px";
+text.style.color = "green";
+
+// const addButton = document.getElementById("addButton");
+// const checkButton = document.getElementById("checkButton");
+// const replaceButton = document.getElementById("replaceButton");
+// const toggleButton = document.getElementById("toggleButton");
+// const removeButton = document.getElementById("removeButton");
+
+// checkButton.addEventListener("click", () => {
+//   // elem.classList.contains(cls) - повертає true або false, в залежності від того, чи є в елемента клас cls
+
+//   const hasClass = example.classList.contains("hightLigt");
+//   console.log(hasClass);
+// });
+
+// addButton.addEventListener("click", () => {
+//   example.classList.add("italic");
+// });
+
+// removeButton.addEventListener("click", () => {
+//   example.classList.remove("highLight");
+// });
+// repalceButton.addEventListener("click", () => {
+//   example.classList.replace("highlight", "bold");
+// });
+// toggleButton.addEventListener("click", () => {
+//   example.classList.toggle("highlight", "bold");
+// });
