@@ -337,3 +337,35 @@ text.style.color = "green";
 // toggleButton.addEventListener("click", () => {
 //   example.classList.toggle("highlight", "bold");
 // });
+
+const showBtn = document.querySelector(".view-btn")
+showBtn .addEventListener("click", (event)=>{
+  console.log(event);
+  console.log(event.type);
+  console.log(event.target);
+  console.log(this);
+})
+const link = document.querySelector("a")
+link.addEventListener("click", (e)=>){
+   e.preventDefault()//скасуваеея диї браузера за азмовчуванням
+}
+
+const form = document.querySelector(".form")
+const loginInput =form.querySelector('input[type="text]')
+const passInput =form.querySelector('input[type="password]')
+
+form.addEventListener("submit",handleSubmit )
+
+function handleSubmit(event){
+  event.preventDefault()
+  const login = loginInput.value.trim() //Вірізає пробилі в початку та кінці рядку
+  const password = passInput.value
+  
+  if(login === "" || password === "") {
+    return alert('Please enter valid information')
+  }
+   form.reset()
+   alert(`
+   Дякую за реєстрацію!
+   Логін: ${login}
+   Пвроль: ${password}`)
