@@ -170,10 +170,10 @@ console.log(subtitle.substring(0, 4));
 
 // !Напиши скрипт який виведе рядок в форматі: “Гість x y поселяється в n номер g”, підставивши замість x, y, n, g значення змінних
 
- let name = "Анатолій";
- let surname = "Шацький";
- let camber = 211;
- let hotel = "Hotel";
+//  let name = "Анатолій";
+//  let surname = "Шацький";
+//  let camber = 211;
+//  let hotel = "Hotel";
  let Surname = alert("Enter your surname:", "");
  let Name = prompt("Enter your name:", "");
  let aprtment = +prompt("Enter your room number:", "");
@@ -346,10 +346,9 @@ showBtn .addEventListener("click", (event)=>{
   console.log(this);
 })
 const link = document.querySelector("a")
-link.addEventListener("click", (e)=>){
+link.addEventListener("click", (e)=>{
    e.preventDefault()//скасуваеея диї браузера за азмовчуванням
-}
-
+})
 const form = document.querySelector(".form")
 const loginInput =form.querySelector('input[type="text]')
 const passInput =form.querySelector('input[type="password]')
@@ -368,4 +367,4 @@ function handleSubmit(event){
    alert(`
    Дякую за реєстрацію!
    Логін: ${login}
-   Пвроль: ${password}`)
+   Пвроль: ${password}`)}
