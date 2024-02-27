@@ -101,30 +101,30 @@
 // console.log((Math.random() * (10 - 1) + 1).toFixed(2));
 
 //Унарний плюс
-let getDate = "154";
-const getAge = +prompt("How old are you?", "");
-console.log(typeof +getDate);
-console.log(typeof +getAge);
+// let getDate = "154";
+// const getAge = +prompt("How old are you?", "");
+// console.log(typeof +getDate);
+// console.log(typeof +getAge);
 
-let isFail = +"";
-console.log(isFail);
+// let isFail = +"";
+// console.log(isFail);
 
-//! Напишіть скрипт, який знаходить обсяг циліндра висотою 10м і діаметром основи 4м , результат та дані повинні зберігатися в змінних
+// //! Напишіть скрипт, який знаходить обсяг циліндра висотою 10м і діаметром основи 4м , результат та дані повинні зберігатися в змінних
 
-// const radius = +"2*2";
-// const height = +"10";
-// const pi = +"3.14";
-// let area = +pi * +height * +radius;
-// console.log(area);
-const single = "одинарні лапки";
-const double = "подвійні лапки";
-const backstrips = `зворотні лапки`;
+// // const radius = +"2*2";
+// // const height = +"10";
+// // const pi = +"3.14";
+// // let area = +pi * +height * +radius;
+// // console.log(area);
+// const single = "одинарні лапки";
+// const double = "подвійні лапки";
+// const backstrips = `зворотні лапки`;
 
-let guestList = "Гості: \n Іван \n Степан \n Петро";
-console.log(guestList);
+// let guestList = "Гості: \n Іван \n Степан \n Петро";
+// console.log(guestList);
 
-const name = "Marshal";
-console.log(`Name: ${name}`);
+// const name = "Marshal";
+// console.log(`Name: ${name}`);
 
 // let str = "Op";
 // str = "o" + str[1];
@@ -135,151 +135,151 @@ console.log(`Name: ${name}`);
 // console.log(str.indexOf("я", 2));
 // console.log(str.includes("сім", 2));
 
-const massage = "Mango " + "is " + "happy ";
-console.log(massage);
+// const massage = "Mango " + "is " + "happy ";
+// console.log(massage);
 
-let result;
-result = 5 / "2";
-console.log(result);
-console.log(typeof result);
+// let result;
+// result = 5 / "2";
+// console.log(result);
+// console.log(typeof result);
 
-const str = "Успіх - це не випадковість, а результат постійного старання";
-console.log(str.startsWith("Усп"));
-console.log(str.endsWith("ння"));
+// const str = "Успіх - це не випадковість, а результат постійного старання";
+// console.log(str.startsWith("Усп"));
+// console.log(str.endsWith("ння"));
 
-const title = "Welcome";
-console.log(title.trim());
-console.log(title.padEnd(13, "("));
-console.log(title.padStart(17, ")"));
+// const title = "Welcome";
+// console.log(title.trim());
+// console.log(title.padEnd(13, "("));
+// console.log(title.padStart(17, ")"));
 
-// !Створити змінну, яка містить рядок з вашим ім'ям. Використовуючи метод .charAt(), вивести перший символ вашого імені в консоль.
-// const name = "Kate";
-// console.log(name.charAt(0));
+// // !Створити змінну, яка містить рядок з вашим ім'ям. Використовуючи метод .charAt(), вивести перший символ вашого імені в консоль.
+// // const name = "Kate";
+// // console.log(name.charAt(0));
 
-//! Створити змінну, яка містить рядок з вашим ім'ям та прізвищем. Використовуючи метод .indexOf(), знайти і вивести в консоль позицію, на якій знаходиться пробіл між ім'ям та прізвищем
-const fullName = "Zhuvak Kateryna";
-console.log(fullName.indexOf(" "));
+// //! Створити змінну, яка містить рядок з вашим ім'ям та прізвищем. Використовуючи метод .indexOf(), знайти і вивести в консоль позицію, на якій знаходиться пробіл між ім'ям та прізвищем
+// const fullName = "Zhuvak Kateryna";
+// console.log(fullName.indexOf(" "));
 
-// !Створити змінну, яка містить рядок з вашим ім'ям. Використовуючи метод .replace(), замінити першу літеру вашого імені на символ "@" та вивести результат в консоль.
-// const name = "KKateryna";
-// console.log(name.replace("K", "@"));
+// // !Створити змінну, яка містить рядок з вашим ім'ям. Використовуючи метод .replace(), замінити першу літеру вашого імені на символ "@" та вивести результат в консоль.
+// // const name = "KKateryna";
+// // console.log(name.replace("K", "@"));
 
-// !Створити змінну, яка містить рядок зі словом "JavaScript". Використовуючи метод .substring(), вивести підстроку, яка містить перші 4 символи слова "Java".
-let subtitle = "JavaScript";
-console.log(subtitle.substring(0, 4));
+// // !Створити змінну, яка містить рядок зі словом "JavaScript". Використовуючи метод .substring(), вивести підстроку, яка містить перші 4 символи слова "Java".
+// let subtitle = "JavaScript";
+// console.log(subtitle.substring(0, 4));
 
-// !Напиши скрипт який виведе рядок в форматі: “Гість x y поселяється в n номер g”, підставивши замість x, y, n, g значення змінних
+// // !Напиши скрипт який виведе рядок в форматі: “Гість x y поселяється в n номер g”, підставивши замість x, y, n, g значення змінних
 
-//  let name = "Анатолій";
-//  let surname = "Шацький";
-//  let camber = 211;
-//  let hotel = "Hotel";
- let Surname = alert("Enter your surname:", "");
- let Name = prompt("Enter your name:", "");
- let aprtment = +prompt("Enter your room number:", "");
- let hotek = prompt("Enter your hotel:", "");
- let mess = alert(
-   "Гість `${Name}` `${Surname}`  поселяється в `${hotek}` номер `${aprtment}`"
- );
- console.log(mess);
-
-
-let balance = "Ваш баланс попвненно на 1";
-console.log(balance.padEnd(30, "0"));
-
-//Написати скрипт пошуку в рядку. Дано
-//const blacklistedWord1 = 'спам';
-//const blacklistedWord2 = 'розпродаж';
-// const blacklistedWord1 = "спам";
-// const blacklistedWord2 = "розпродаж";
-// const blacklistedWord3 = "кампанія";
-// const string1 = "Привіт, я Ілон Маск, це не спам, пропоную тобі мільйон!";
-// const string2 = "Найбільший РОЗПРОДАЖ цього тижня, не пропустіть!";
-// const string3 = "Рекламна кампанія #jsIsAwesome";
-// console.log(string1.includes(blacklistedWord1));
-// console.log(string2.includes(blacklistedWord2));
-// console.log(string3.includes(blacklistedWord3));
-
-const totalMinutes = prompt("Введіть кількість хвилин", "");
-const numberHours = totalMinutes / 60;
-const hours = Math.floor(numberHours % 24);
-const days = Math.floor(numberHours / 24);
-const minutes = totalMinutes % 60;
-const modeMinutes = String(minutes).padStart(2, "0");
-const modeHours = String(hours).padStart(2, "0");
-alert(`${days} days ${modeHours}:${modeMinutes}`);
-console.log(`${days} days ${modeHours}:${modeMinutes}`);
-
-//! Navigator-за допомогою нього ми можемо отримати інформацію про браузер та операцийну сістему
-// !BOM
-
-// console.log(navigator.userAgent);
-// alert(location.href);
-// if(confirm("Перейті на сайт Вікіпедія?")){
-//     location.href="https://wikipedia.org"
-// }
-
-//! DOM-навігація по документу
-// const htmlElement = document.documentElement;
-// const headElement = document.head;
-// const bodyElement = document.body;
-
-// console.log(htmlElement)
-// console.log(headElement)
-// console.log(bodyElement)
-const item = document.querySelector(".item")
-const parentElementNode = item.parentNode;
-console.log(parentNode);  //!elem.parentNode - вибере батька elem
-
-//! elem.childNodes - псевдомасив зберігає всі дочірні елементи, включаючи текстові.
-const  childElementNode = item.childNodes;
-console.log(childElementNode);
-
-// !elem.children - псевдомасив зберігає тільки дочірні вузли-елементи, тобто
-// !відповідні тегам.
-
-const childrenElem =  parentElementNode.children;
-console.log(childrenElem);
-
-//!elem.firstChild - вибере перший дочірній елемент всередині elem, включаючи текстові вузли.
-
-const container = document.querySelector(".container")
-const firstChildElement =  container.firstElementChild;
-console.log(`Перший дочірній елемент:${firstChildElement}`);
-const lastChild =  container.last6ElementChild;
-console.log(`Останній дочірній елемент(Включаючи текстові вузли ):${lastChild}`);
-const lastElementChild =  container.last6ElementChild;
-console.log(`Останній дочірній елемент:${lastElementChild}`)
-
-const  secondElement = firstChildElement.nextElementSibling
-console.log(`Отримання попереднього сусіда:${lastElementChild}`);
-
-const thirdElement = secondElement.nextElementSibling;
+// //  let name = "Анатолій";
+// //  let surname = "Шацький";
+// //  let camber = 211;
+// //  let hotel = "Hotel";
+//  let Surname = alert("Enter your surname:", "");
+//  let Name = prompt("Enter your name:", "");
+//  let aprtment = +prompt("Enter your room number:", "");
+//  let hotek = prompt("Enter your hotel:", "");
+//  let mess = alert(
+//    "Гість `${Name}` `${Surname}`  поселяється в `${hotek}` номер `${aprtment}`"
+//  );
+//  console.log(mess);
 
 
-const firstParagraph =  document.querySelector("p")
+// let balance = "Ваш баланс попвненно на 1";
+// console.log(balance.padEnd(30, "0"));
 
-console.log(`First element <p>: ${firstParagraph}`);
+// //Написати скрипт пошуку в рядку. Дано
+// //const blacklistedWord1 = 'спам';
+// //const blacklistedWord2 = 'розпродаж';
+// // const blacklistedWord1 = "спам";
+// // const blacklistedWord2 = "розпродаж";
+// // const blacklistedWord3 = "кампанія";
+// // const string1 = "Привіт, я Ілон Маск, це не спам, пропоную тобі мільйон!";
+// // const string2 = "Найбільший РОЗПРОДАЖ цього тижня, не пропустіть!";
+// // const string3 = "Рекламна кампанія #jsIsAwesome";
+// // console.log(string1.includes(blacklistedWord1));
+// // console.log(string2.includes(blacklistedWord2));
+// // console.log(string3.includes(blacklistedWord3));
 
-const allParagraphs = document.querySelectorAll("p")
-const secondParagraph = document.querySelector(".second")
-console.log(`Second element <p>: ${secondParagraph}`);
+// const totalMinutes = prompt("Введіть кількість хвилин", "");
+// const numberHours = totalMinutes / 60;
+// const hours = Math.floor(numberHours % 24);
+// const days = Math.floor(numberHours / 24);
+// const minutes = totalMinutes % 60;
+// const modeMinutes = String(minutes).padStart(2, "0");
+// const modeHours = String(hours).padStart(2, "0");
+// alert(`${days} days ${modeHours}:${modeMinutes}`);
+// console.log(`${days} days ${modeHours}:${modeMinutes}`);
 
-const btn = document.getElementsById("btn");
-// const button = document.querySelector("#btn");
-//value:ця властивисть містить поточний текстовий вміст елементів: input, select, textarea.вона допомогає отриматиабо змінювати значення елементів.
-const btnChangeValue = document.querySelector(".btn-input");
-const inputValue = document.querySelector(".input");
+// //! Navigator-за допомогою нього ми можемо отримати інформацію про браузер та операцийну сістему
+// // !BOM
 
-btnChangeValue.addEventListener("click", () => {
-  inputValue.value = "New value";
-});
+// // console.log(navigator.userAgent);
+// // alert(location.href);
+// // if(confirm("Перейті на сайт Вікіпедія?")){
+// //     location.href="https://wikipedia.org"
+// // }
 
-const checkbox = document.getElementById("checkbox");
-const btnStageChange = document.querySelector(".btn-state");
-btnStageChange.addEventListener("click", () => {
-  checkbox.checked = !checkbox.checked;
-});
+// //! DOM-навігація по документу
+// // const htmlElement = document.documentElement;
+// // const headElement = document.head;
+// // const bodyElement = document.body;
+
+// // console.log(htmlElement)
+// // console.log(headElement)
+// // console.log(bodyElement)
+// // const item = document.querySelector(".item")
+// // const parentElementNode = item.parentNode;
+// // console.log(parentNode);  //!elem.parentNode - вибере батька elem
+
+// //! elem.childNodes - псевдомасив зберігає всі дочірні елементи, включаючи текстові.
+// // const  childElementNode = item.childNodes;
+// // console.log(childElementNode);
+
+// // !elem.children - псевдомасив зберігає тільки дочірні вузли-елементи, тобто
+// // !відповідні тегам.
+
+// const childrenElem = document. parentElementNode.children;
+// console.log(childrenElem);
+
+// //!elem.firstChild - вибере перший дочірній елемент всередині elem, включаючи текстові вузли.
+
+// const container = document.querySelector(".container")
+// const firstChildElement =  container.firstElementChild;
+// console.log(`Перший дочірній елемент:${firstChildElement}`);
+// const lastChild =  container.last6ElementChild;
+// console.log(`Останній дочірній елемент(Включаючи текстові вузли ):${lastChild}`);
+// const lastElementChild =  container.last6ElementChild;
+// console.log(`Останній дочірній елемент:${lastElementChild}`)
+
+// const  secondElement = firstChildElement.nextElementSibling
+// console.log(`Отримання попереднього сусіда:${lastElementChild}`);
+
+// const thirdElement = secondElement.nextElementSibling;
+
+
+// const firstParagraph =  document.querySelector("p")
+
+// console.log(`First element <p>: ${firstParagraph}`);
+
+// const allParagraphs = document.querySelectorAll("p")
+// const secondParagraph = document.querySelector(".second")
+// console.log(`Second element <p>: ${secondParagraph}`);
+
+// const btn = document.getElementsById("btn");
+// // const button = document.querySelector("#btn");
+// //value:ця властивисть містить поточний текстовий вміст елементів: input, select, textarea.вона допомогає отриматиабо змінювати значення елементів.
+// const btnChangeValue = document.querySelector(".btn-input");
+// const inputValue = document.querySelector(".input");
+
+// btnChangeValue.addEventListener("click", () => {
+//   inputValue.value = "New value";
+// });
+
+// const checkbox = document.getElementById("checkbox");
+// const btnStageChange = document.querySelector(".btn-state");
+// btnStageChange.addEventListener("click", () => {
+//   checkbox.checked = !checkbox.checked;
+// });
 //! name = властивість зберігає значення вказане в  HTML атрибуті name.
 //!Зазвичай буде застосовуватись для відправки формна сервері
 
@@ -292,24 +292,24 @@ btnStageChange.addEventListener("click", () => {
 
 //! src
 
-let image = document.getElementById("image");
+// let image = document.getElementById("image");
 
-image.addEventListener("click", () => {
-  image.src =
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI-SaYWlXmVicHWYEEpRgrmFir507tWQk3pA&usqp=CAU";
-});
+// image.addEventListener("click", () => {
+//   image.src =
+//     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI-SaYWlXmVicHWYEEpRgrmFir507tWQk3pA&usqp=CAU";
+// });
 
-// !elem.textContent — властивість, містить текстовий контент всередині елемента. Доступно для запису, при чому незалежно що буде передано в textContent, дані завжди будуть записані як текст.
-const changeBtn = document.querySelector(".change-text");
-const text = document.querySelector(".text");
-changeBtn.addEventListener("click", () => {
-  text.textContent = "New text";
-});
-text.style.backgroundColor = "yellow";
-text.style.fontSize = "40px";
-text.style.borderRadius = "10px";
-text.style.padding = "40px";
-text.style.color = "green";
+// // !elem.textContent — властивість, містить текстовий контент всередині елемента. Доступно для запису, при чому незалежно що буде передано в textContent, дані завжди будуть записані як текст.
+// const changeBtn = document.querySelector(".change-text");
+// const text = document.querySelector(".text");
+// changeBtn.addEventListener("click", () => {
+//   text.textContent = "New text";
+// });
+// text.style.backgroundColor = "yellow";
+// text.style.fontSize = "40px";
+// text.style.borderRadius = "10px";
+// text.style.padding = "40px";
+// text.style.color = "green";
 
 // const addButton = document.getElementById("addButton");
 // const checkButton = document.getElementById("checkButton");
@@ -338,33 +338,59 @@ text.style.color = "green";
 //   example.classList.toggle("highlight", "bold");
 // });
 
-const showBtn = document.querySelector(".view-btn")
-showBtn .addEventListener("click", (event)=>{
-  console.log(event);
-  console.log(event.type);
-  console.log(event.target);
-  console.log(this);
-})
-const link = document.querySelector("a")
-link.addEventListener("click", (e)=>{
-   e.preventDefault()//скасуваеея диї браузера за азмовчуванням
-})
-const form = document.querySelector(".form")
-const loginInput =form.querySelector('input[type="text]')
-const passInput =form.querySelector('input[type="password]')
+// const showBtn = document.querySelector(".view-btn")
+// showBtn .addEventListener("click", (event)=>{
+//   console.log(event);
+//   console.log(event.type);
+//   console.log(event.target);
+//   console.log(this);
+// })
+// const link = document.querySelector("a")
+// link.addEventListener("click", (e)=>{
+//    e.preventDefault()//скасуваеея диї браузера за азмовчуванням
+// })
+// const form = document.querySelector(".form")
+// const loginInput =form.querySelector('input[type="text]')
+// const passInput =form.querySelector('input[type="password]')
 
-form.addEventListener("submit",handleSubmit )
+// form.addEventListener("submit",handleSubmit )
 
-function handleSubmit(event){
-  event.preventDefault()
-  const login = loginInput.value.trim() //Вірізає пробилі в початку та кінці рядку
-  const password = passInput.value
+// function handleSubmit(event){
+//   event.preventDefault()
+//   const login = loginInput.value.trim() //Вірізає пробилі в початку та кінці рядку
+//   const password = passInput.value
   
-  if(login === "" || password === "") {
-    return alert('Please enter valid information')
-  }
-   form.reset()
-   alert(`
-   Дякую за реєстрацію!
-   Логін: ${login}
-   Пвроль: ${password}`)}
+//   if(login === "" || password === "") {
+//     return alert('Please enter valid information')
+//   }
+//    form.reset()
+//    alert(`
+//    Дякую за реєстрацію!
+//    Логін: ${login}
+//    Пвроль: ${password}`)}
+
+
+
+// !   Напиши скрипт в якому є три радіобатони зі значенями кольрів. При обиранні на будь якого колір фону боді змінюється відповідно
+//  <form>
+//    <p>Choose a color:</p>
+//    <label>
+//      <input type="radio" name="color" value="red" checked />
+//      Red
+//    </label>
+//    <label>
+//      <input type="radio" name="color" value="white" />
+//      White
+//    </label>
+//    <label>
+//      <input type="radio" name="color" value="green" />
+//      Green
+//    </label>
+  // </form>
+ 
+//   
+//    Напиши скрипт який, при наборі тексту в інпут input#name-input (подія input), підставляє його поточне значення в span#name-output. якщо інпут порожній, в спані повинен відображатися рядок 'незнайомець'.
+//  <input type="text" placeholder="Ваше ім'я?" id="name-input" />
+//  <h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
+ 
+ 

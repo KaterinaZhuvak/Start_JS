@@ -1,8 +1,4 @@
 "use strict"
-
-
-
-
 //! hw 6
 const changeTextBtn = document.querySelector(".change-text");
 const text = document.querySelector(".text")
