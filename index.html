@@ -68,30 +68,66 @@
   <input type="password" placeholder="password">
   <button class="btn" type="submit">Sign in</button>
 </form> -->
-<form>
+<!-- <form class="form" >
    <p>Choose a color:</p>
    <label>
-   <input type="radio" name="color" value="red" checked />
+   <input id="red" type="radio" name="color" value="red" checked />
     Red
    </label>
    <label>
-     <input  type="radio" name="color" value="white" />
+     <input id="white"  type="radio" name="color" value="white" />
     White
    </label>
     <label>
-    <input type="radio" name="color" value="green" />
+    <input id="green" type="radio" name="color" value="green" />
   Green
 </label>
-    </form>
+    </form> -->
+<style>
+  .box{
+    width: 250px;
+    height: 250px;
+    background: olive;
+    position: relative;
+  }
 
-    <input type="text" placeholder="Ваше ім'я?" id="name-input" />
-   <h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
-    <!-- <p class="newField"></p> -->
+  #validation-input {
+   border: 3px solid #bdbdbd;
+  }
+  
+  #validation-input.valid {
+   border-color: #4caf50;
+  }
+  
+  #validation-input.invalid {
+   border-color: #f44336;
+  }
+</style>
+
+
+  
+    <!-- <input type="text" class="my-input">
+    <button class="focus">Focus input</button>
+    <button class="blur">Blur input</button>
+    <hr>
+    <div class="box"></div>
+
+     <input type="text" placeholder="Ваше ім'я?" id="name-input" />
+   <h1>Привіт, <span id="name-output">незнайомець</span>!</h1> 
+<hr> -->
+   <input
+ type="text"
+ id="validation-input"
+ data-length="6"
+ placeholder="Введи 6 символів"/>
+
+
      <script src="./js/script.js"></script>
      <!-- <script src="./js/hw_1.js"></script>
     <script src="./js/hw_2.js"></script> 
    <script src="./js/hw_4.js"></script>  -->
    <!-- <script src="./js/hw5&6.js"></script> -->
+   <!-- <script src="./js/actions.js"></script> -->
   
   </body>
 </html>

@@ -372,6 +372,31 @@
 
 
 // !   Напиши скрипт в якому є три радіобатони зі значенями кольрів. При обиранні на будь якого колір фону боді змінюється відповідно
+// function changeColor(){
+//   var body = document.querySelector(".form")
+//   if (document.getElementById("red").checked){
+//    body.style.color.backgroundColor = "red"
+//   }
+//    else if (document.getElementById("white").checked== true){
+//     body.style.color.backgroundColor= "white"
+//    }
+//    else{
+//     body.style.color.backgroundColor= "green"
+//    }
+//    }
+// const radioInputs = document.body
+// var radioInput = document.getElementsByName("color")
+
+// for (radioInput of radioInputs){
+//   radioInput.onClick = changeBg;
+// }
+// function changeBg(){
+//     document.body.style.background = this.value
+// }
+// radioInput.addEventListener("checked", changeBg)
+//   document.body.style.background = this.value
+
+
 //  <form>
 //    <p>Choose a color:</p>
 //    <label>
@@ -392,5 +417,60 @@
 //    Напиши скрипт який, при наборі тексту в інпут input#name-input (подія input), підставляє його поточне значення в span#name-output. якщо інпут порожній, в спані повинен відображатися рядок 'незнайомець'.
 //  <input type="text" placeholder="Ваше ім'я?" id="name-input" />
 //  <h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
- 
- 
+// const input = document.getElementById('name-input');
+// const span = document.getElementById('name-output');
+
+// function myFunction() {
+// const userName = input.value;
+
+// if( userName === "" ) {
+// span.textContent = 'незнайомець';
+
+// }
+// else {
+// span.textContent = userName;
+// }
+// }
+// input.addEventListener('input', myFunction);
+
+
+// document.getElementById('validation-input').addEventListener('blur', function () {
+//   const inputValue = document.getElementById("validation-input");
+//   const expectedLength = document.querySelector('[data-length="6"]');
+  
+//   if (inputValue.length === expectedLength) {
+//     this.classList.remove('invalid');
+//     this.classList.add('valid');
+//   } else {
+//     this.classList.remove('valid');
+//     this.classList.add('invalid');
+//   }
+// });
+
+ const validInput = document.getElementById("validation-input")
+ const maxLength = document.querySelector('[data-length="6"]')
+ function validation(){
+   if (validInput.length === maxLength) {
+    validInput.classList.add("valid");
+    validInput.classList.remove("invalid")
+   }
+   else {
+    validInput.classList.remove("valid");
+    validInput.classList.add("invalid");
+  }
+ }
+ document.addEventListener("input", validation)
+// document.getElementById('validation-input').addEventListener('blur', function() {
+//   const inputValue = this.value.trim();
+//   const expectedLength = parseInt(this.getAttribute('data-length'), 10);
+
+//   if (inputValue.length === expectedLength) {
+//       this.classList.remove('invalid');
+//       this.classList.add('valid');
+//   } else {
+//       this.classList.remove('valid');
+//       this.classList.add('invalid');
+//   }
+// });
+
+//! target = елемент, якій ініциює подію
