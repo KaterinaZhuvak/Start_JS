@@ -448,9 +448,9 @@
 // });
 
  const validInput = document.getElementById("validation-input")
- const maxLength = document.querySelector('[data-length="6"]')
+ const maxLength = 6
  function validation(){
-   if (validInput.length === maxLength) {
+   if (validInput.value.length <= maxLength) {
     validInput.classList.add("valid");
     validInput.classList.remove("invalid")
    }
