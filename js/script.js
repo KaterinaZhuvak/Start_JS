@@ -472,5 +472,54 @@
 //       this.classList.add('invalid');
 //   }
 // });
+//! && - i -зупиняє код на false(шальшивому) значеннні
+//! ||- або - запускає код прі наявности true(правдивого) значення
+//! !- ні- колі значення не дорівнює true (або false)
 
+const num = 40;
+
+const result = num > 10 && num < 30;
+
+console.log(result);
+
+
+//! Тернатрний оператор
+//! Синтаксис 
+//! let result = умова? значення 1 : значення2 
+console.log("Я правдивий" && null && ["Я також правдивий"]);
+сonsole.log("Я правдивий" && false && ["Я також правдивий"]);
+console.log("Я правдивий" && ["Я також правдивий"] && '');ссссс
+let ageUser = +prompt("Вік?", "");
+let answer =
+ ageUser < 3
+? "Привіт крихітко!"
+ : ageUser < 18
+ ? "Вітаю"
+ : ageUser < 100
+ ? "Моє шанування!"
+ : "Якийсь незвичайни вік!";
+ alert(answer)
+ if( ageUser < 3){
+   message = "Привіт, крихітко!"
+ } else if(ageUser < 18){
+   message = "Вітаю"
+ }
+ else if(ageUser < 100){
+   message = "Моє шанування!"
+ }else{
+   message = "Якийсь незвичайни вік!"
+}
+
+
+const year = +prompt("В якому році оублікована ЕСМА?")
+if(year === 2015){
+  alert("Супер!")
+}
+else if(year > 2015){
+  alert("Зарано")
+}
+else{
+  alert("Запізно")
+}
 //! target = елемент, якій ініциює подію
+
