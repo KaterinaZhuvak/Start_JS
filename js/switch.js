@@ -27,3 +27,83 @@
 // Напиши скрипт вибору готеля по кількості зірок.
 
 // Якщо ваше ім’я містить більше 4 букв і прізвище більше 5, то виведіть на екран число,яке дорівнює сумі букв імені і прізвища. Якщо умова не виконується - вивести “УПС”. Наприклад: “Віктор Сташко” Віктор - 6 літер, Сташко - 6 літер. Виводимо 12. Використовувати вбудований метод length.
+
+// Створити розмітку з формою, що містить список (select) з трьома варіантами вибору: "Кава", "Чай" та "Сік".
+// При виборі кожного варіанту виводити відповідне повідомлення в блок на сторінці.
+const input = document.getElementById("option-input")
+const optionBtn = document.querySelector(".option")
+function option(){
+    switch(input.value){
+        case "1":
+            alert("Ви обрали каву")
+        break    
+        case "2":
+            alert("Ви обрали чай")
+        break    
+        case "3":
+            alert("Ви обрали сік")
+        break 
+         default:
+            alert("Ви не обрали напій")
+         break
+    }
+} 
+optionBtn.addEventListener("click", option)
+// Створити розмітку з полем введення, що приймає рядок та кнопкою. При натисканні на кнопку перевіряти, чи введений рядок є днем тижня (наприклад: "понеділок",
+//  "вівторок" і т.д.), виводити відповідне повідомлення про робочий день або вихідний.
+const weekInput = document.getElementById("week-input")
+const weekButton = document.querySelector(".week-button")
+function weekDay(){
+    switch (weekInput) {
+        case "Monday": 
+        case "Tuesday": 
+        case "Wednesday": 
+        case "Thursday": 
+        case "Friday":
+            alert("Робочий день тиждня")
+            break;
+        case "Saturday": 
+        case "Sunday":
+        alert("Вихідний")  
+        break
+        default:
+            alert("Введіть деннь тіжня")
+            break;
+    }
+}
+weekButton.addEventListener("click", weekDay )
+// Створити розмітку з полем введення, що приймає номер місяця та кнопкою. При натисканні на кнопку виводити повідомлення про пору року, до якої належить цей місяць.
+ const monthInput = document.getElementById("month-input")
+ const monthButton = document.querySelector(".month-check")
+ function month(){
+  switch(monthInput){
+    case "1": 
+    case "2": 
+    case "12":
+        alert("Winter")
+        break
+        case "3": 
+        case "4": 
+        case "5":
+            alert("Spring")
+            break
+        case "6": 
+        case "7": 
+        case "8":
+                alert("Summer")
+                break
+            case "9": 
+            case "10": 
+            case "11":
+                    alert("Autumn")
+                break
+    default:
+        alert("Enter a num")
+  }
+ }
+ monthButton.addEventListener("click", month)
+// Створити розмітку з полем введення, що приймає номер місяця та кнопкою. При натисканні на кнопку виводити кількість днів у цьому місяці.
+// Створити розмітку з полем введення, що приймає назву кольору (наприклад, "червоний", "синій" і т.д.) та кнопкою. При натисканні на кнопку виводити відповідне повідомлення про
+//  дію: якщо це "червоний" — "стоп", якщо "зелений" — "йти", якщо "жовтий" — "чекати".
+// Створити розмітку з двома полями введення, що приймають числа та список (select) з варіантами вибору 
+// операцій: "+", "-", "*", "/". При натисканні на кнопку виводити результат обраної операції над цими числами. Користувач повинен бути попереджений про можливість ділення на нуль.
