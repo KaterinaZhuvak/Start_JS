@@ -54,7 +54,7 @@ optionBtn.addEventListener("click", option)
 const weekInput = document.getElementById("week-input")
 const weekButton = document.querySelector(".week-button")
 function weekDay(){
-    switch (weekInput) {
+    switch (weekInput.value) {
         case "Monday": 
         case "Tuesday": 
         case "Wednesday": 
@@ -76,7 +76,7 @@ weekButton.addEventListener("click", weekDay )
  const monthInput = document.getElementById("month-input")
  const monthButton = document.querySelector(".month-check")
  function month(){
-  switch(monthInput){
+  switch(monthInput.value){
     case "1": 
     case "2": 
     case "12":
@@ -102,8 +102,56 @@ weekButton.addEventListener("click", weekDay )
   }
  }
  monthButton.addEventListener("click", month)
-// Створити розмітку з полем введення, що приймає номер місяця та кнопкою. При натисканні на кнопку виводити кількість днів у цьому місяці.
+// Створити розмітку з полем введення, що приймає номер місяця та кнопкою. При натисканні на кнопку виводити кількість днів у цьому місяці. 
+// В Январе, Марте, Мае, Июле, Августе, Октябре и Декабре - 31 день. В Апреле, Июне, Сентябре и Ноябре - 30 дней. В Феврале - 28 дней, но если год високосный - 29 дней.
+const dayInput = document.getElementById("days-input")
+const daysBtn = document.querySelector(".day-btn")
+function checkDay(){
+    switch(dayInput.value){
+        case "January": 
+        case "March" : 
+        case "May" : 
+        case "July" :
+        case "October": 
+        case "December":
+            alert("There is 31 day in this month")
+            break  
+            case "April": 
+            case "June" : 
+            case "September": 
+            case "November":
+                alert("There is 30 day in this month")
+                break  
+              
+            case "February":
+                alert("There is 28/29 day in this month")
+                break  
+                default:
+                    alert("Enter the name of a month")
+                   break 
+    }
+}
+daysBtn.addEventListener("click", checkDay)
 // Створити розмітку з полем введення, що приймає назву кольору (наприклад, "червоний", "синій" і т.д.) та кнопкою. При натисканні на кнопку виводити відповідне повідомлення про
 //  дію: якщо це "червоний" — "стоп", якщо "зелений" — "йти", якщо "жовтий" — "чекати".
+const colorInput = document.getElementById("color")
+const colcorBtn = document.querySelector(".check-colour")
+function color(){
+    switch(colorInput.value){
+        case "Red":
+            alert("Stop")
+         break   
+         case "Yellow":
+            alert("Wait")
+         break
+         case "Green":
+            alert("Go")
+         break
+         default:
+            alert("Enter a name of a color")
+            break
+    }
+}
+colcorBtn.addEventListener("click", color)
 // Створити розмітку з двома полями введення, що приймають числа та список (select) з варіантами вибору 
 // операцій: "+", "-", "*", "/". При натисканні на кнопку виводити результат обраної операції над цими числами. Користувач повинен бути попереджений про можливість ділення на нуль.
