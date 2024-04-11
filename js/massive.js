@@ -26,6 +26,7 @@
 
 // Створити масив із п'яти чисел. Використовуючи метод indexOf(), знайти індекс елемента зі значенням 3.
 
+"use strict"
 
 const arr2 = [2, 4, 5, 6, 1, 3, 5, 6, 43, 1];
 const arrNew = arr2.slice(0, 5)
@@ -40,7 +41,7 @@ console.log(arrNew);
 // - Зшиваємо в рядок з розділителями
 // - Ченінг
 // // Повинно вийти top-10-benefits-of-react-framework
-const title = 'Top 10 benefits of React framework
+const title = 'Top 10 benefits of React framework'
 
 
 
@@ -67,7 +68,7 @@ const message = "Welcome to Ukraine!";
 // Наприклад, “Poly” => “Poly-1”
 
 
-/ Створити масив з трьох чисел. Змінити значення другого елемента масиву на 10.
+// Створити масив з трьох чисел. Змінити значення другого елемента масиву на 10.
 const numbers = [2, 4, 7];
 numbers[1] = 10;
 console.log(numbers);
@@ -107,3 +108,24 @@ for (let i = 0; i < myArray.length; i++){
 //     console.log("error");
 //   }
 // }
+
+ //!hw 8
+  const friends = ['Mango','Poly','Kiwi', 'Ajax']
+  let string = '' 
+  for(let i = 0; i < friends.length; i++){
+   friends.at(-1)
+   string += friends[i]
+   console.log(string);
+  }    
+
+
+// const friends = ['Mango','Poly','Kiwi', 'Ajax']
+// let string = '' 
+// console.log(friends.join(","));
+
+
+const cards = [ "Карточка 1", 'Карточка 2', 'Карточка 3', 'Карточка 4', 'Карточка 5',]
+cards.splice(2,1)
+cards.unshift()
+console.log(cards.push('Карточка 6'));
+console.log(cards);
