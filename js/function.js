@@ -111,3 +111,99 @@ const validateInput = function(){
 console.log(b);
     // Функціональна область видімості 
   }
+
+  //Д/з
+
+  // Напиши функцію logItems(array), яка отримує масив і використовує цикл for, 
+  // який для кожного елемента масиву буде виводити в консоль повідомлення в форматі [номер елемента] - [значення елемента]. Нумерація повинна починатися з 1.
+  // Наприклад, для першого елемента масиву ['Mango', 'Poly', 'Ajax'] з індексом 0 буде виведено '1 - Mango', а для індексу 2 виведе '3 - Ajax'.
+// const logItems = function(array){
+//   for(i=0; i < array.lenght; i++){
+//     console.log(`${array[i + 1]} - ${array[1]}`);
+//   }
+// }
+
+
+// Напиши скрипт підрахунку вартості гравіювання прикрас. Для цього створи функцію calculateEngravingPrice(message, pricePerWord) приймаючу рядок (в рядку будуть 
+// тільки слова і прогалини) і ціну гравіювання одного слова, і повертає ціну гравіювання всіх слів в рядку.
+
+ const calculateEngravingPrice = function(message, pricePerWord){
+  let engravingArray = message.split(" ")
+  let totalCost = 0
+  for(let i = 0; i < message.length; i++){
+    totalCost = message[i + 1] * pricePerWord
+  }
+    return totalCost
+}
+
+console.log(calculateEngravingPrice("My Love", 20));
+// Напиши функцію findLongestWord(string), яка приймає параметром довільний рядок (в рядку будуть тільки слова і прогалини) і повертає найдовше слово в цьому рядку.
+
+
+ const findLongestWord= function(string) {
+  let words = string.split(" ");
+  let longestWord = "";
+  for (let i = 0; i < words.length; i++) {
+      if (words[i].length > longestWord.length) {
+          longestWord = words[i];
+      }
+  }
+
+  return longestWord;
+}
+
+
+const inputString = "Hi my name is ";
+console.log("Найдовше слово у рядку:", findLongestWord(inputString));
+
+
+
+
+
+//
+//? Стрілочна функція 
+// const bar = function(name){
+//   console.log(name);
+// }
+
+const bar = name =>{
+  console.log(name);
+}
+bar("type")
+// Напишіть функцію, яка приймає на вхід масив чисел і повертає новий масив, в якому кожний елемент є квадратом відповідного елементу вхідного масиву.
+// const squareArray = function(array){
+//   const numSguare = []
+//   for(let i<)
+// }
+
+const obj ={
+  name:'John',
+  sayName: function(){
+    console.log(`My name is : ${this.name }`);
+  },
+  sayNameArrow: () =>{
+    console.log(`My name is : ${this.name }`);
+  }
+  }
+  obj.sayName()
+  obj.sayNameArrow()
+// Напиши стрілкову функцію myNewArrowFunction(), яка приймає всі аргументи за допомогою ...rest і в результаті виводить масив цих аргументів у консоль.
+const myNewArrowFunction =(...args)=>{
+  console.log(args);
+} 
+ myNewArrowFunction(1, 2, 3);
+ myNewArrowFunction(100, 200, 300, 400, 500);
+ myNewArrowFunction("Js", "Python", "Java", "PHP", "C++");
+
+//  Напишіть функцію, яка повертає новий масив, в якому всі елементи масиву помножені на задане число, з використанням колбек-функції
+
+
+// const arr = [1, 2, 3, 4, 5];
+
+
+// function multiplyArray(arr, num, callback) {
+
+// }
+
+
+// multiplyArray(arr, 3, () => {});
