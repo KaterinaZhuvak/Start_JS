@@ -669,4 +669,144 @@ console.log(findPlayer);
 //     Знайти гравця по id
 //     Знайти гравця по імені
 //     Перевірити чи всі гравці мають час більше 200
-//     Перевірити чи всі гравці онлайн 
+//     Перевірити чи всі гравці онлайн
+
+//? Перебираючи методи массиву
+//? 1) reduce
+//0 - початкове значення аккумулятора (асс), якщо його немає тоді асс присвоюється перше число
+const numbers = [1,2,3,4,5,4]
+const  totaNum = numbers.reduce((acc, value) => acc + value)
+console.log(totaNum);
+
+
+const tweets = [
+    { id: '000', likes: 5, tags: ['js', 'nodejs'] },
+    { id: '001', likes: 2, tags: ['html', 'css'] },
+    { id: '002', likes: 17, tags: ['html', 'js', 'nodejs'] },
+    { id: '003', likes: 8, tags: ['css', 'react'] },
+    { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
+    ];
+    const totalLikes = tweets.reduce((sum, tweet) =>{
+        return sum + tweet.likes
+    }, 0)
+
+    console.log(totalLikes);
+    const tags = tweets.reduce((allTags,tweet)=>{
+     allTags.push(...tweet.tags) 
+     return allTags
+    },[])
+    console.log(tags);
+
+
+    const countTags =(array)=>{
+    
+       return array.reduce((allTags,tweet)=>{
+            allTags.push(...tweet.tags)
+            return allTags
+        },[])
+    }
+    console.log(countTags(tweets));
+
+    const getTasgStats =(acc, tag)=>{
+            if(!acc.hasownProperties(tag)){
+                acc[tag]= 0
+            }
+            acc[tag]+= 1
+            return acc
+    };
+    constCounttags
+
+    //? Метод sort - сортує елементи масиву, змінюючіи початковий массив 
+
+    const  numbersSort = [3,6,7,2,4]
+    console.log(numbersSort.sort((a,b) => a-b));
+    console.log(numbersSort.sort((a,b) => b-a));
+
+  const clients = ["Alex","Jane","Hanna","Judie"]
+  console.log(clients.sort());
+
+
+  const usersForSort =[
+    {name:"Alex", dayActive:15},
+    {name:"Jane", dayActive:4},
+    {name:"Judie", dayActive:27},
+    {name:"Hanna", dayActive:2}
+  ]
+  const sortByDayActive =(a,b)=> a.dayActive - b.dayActive;
+  const sortByDayActiveWay =(a,b)=> b.dayActive - a.dayActive;
+  console.log(usersForSort.sort(sortByDayActive));
+  console.log(usersForSort.sort(sortByDayActiveWay));
+
+
+  const sortNames =(a,b) => a.name.localeCompare(b.name)
+console.log(usersForSort.sort(sortNames));
+//localeCompare - метод, який  порівнює дві строки  в поточній  локалі  і повертає -1,0,1  в залежності від порядку сортування
+
+
+const players1 = [
+  { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
+  { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
+  { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
+  { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
+  { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },]
+
+//   Порахувати загальну кількість годин
+// Відсортувати по кількості проведенного часу в грі
+
+ const totalHours = players1.reduce((acc,player)=> acc + player.timePlayed,0)
+ console.log(totalHours);
+ const totalGameTime =(a,b)=> a.timePlayed - b.timePlayed;
+ console.log(players1.sort(totalGameTime));
+
+//  Порахувати загальну кількість товарів в кошику
+const cart = [
+  { label: 'Apples', price: 100, quantity: 2 },
+  { label: 'Bananas', price: 120, quantity: 3 },
+  { label: 'Lemons', price: 70, quantity: 4 },
+  ];
+
+const totalProducts = cart.reduce((acc,product)=> acc + product.quantity, 0 )
+console.log(totalProducts);
+
+// const tweets = [
+//   { id: '000', likes: 5, tags: ['js', 'nodejs'] },
+//   { id: '001', likes: 2, tags: ['html', 'css'] },
+//   { id: '002', likes: 17, tags: ['html', 'js', 'nodejs'] },
+//   { id: '003', likes: 8, tags: ['css', 'react'] },
+//   { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
+//   ];
+//   const totalTags = tweets.reduce((acc,tweet)=> acc + tweet.tags,[])
+// console.log(totalTags);
+
+const tweets = [
+  { id: '000', likes: 5, tags: ['js', 'nodejs'] },
+  { id: '001', likes: 2, tags: ['html', 'css'] },
+  { id: '002', likes: 17, tags: ['html', 'js', 'nodejs'] },
+  { id: '003', likes: 8, tags: ['css', 'react'] },
+  { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
+  ];
+  const totalTags = tweets.reduce((acc,tweet)=> {
+    tweet.tags.forEach(tag => {
+      acc[tag] = (acc[tag] || 0) + 1
+    }
+    )
+    return acc
+  },{})
+console.log(totalTags)
+
+// Відсортуйте масив об'єктів за спаданням значення властивості price, а при однаковому значенні price - за зростанням значення властивості quantity.
+ const products0 = [
+{ name: 'Product 1', price: 100, quantity: 5 },
+{ name: 'Product 2', price: 50, quantity: 10 },
+{ name: 'Product 3', price: 200, quantity: 2 },
+{ name: 'Product 4', price: 50, quantity: 5 }
+];
+const sortProducts = (a,b) => {
+  if(a.price == b.price){
+    return a.quantity - b.quantity
+  }
+  else{
+    return b.price - a.price
+  }
+};
+console.log(products0.sort(sortProducts));
