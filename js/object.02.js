@@ -1,4 +1,4 @@
-"use strict"
+
 
 // const user = {
 //     name:"Kate",
@@ -778,14 +778,14 @@ console.log(totalProducts);
 //   const totalTags = tweets.reduce((acc,tweet)=> acc + tweet.tags,[])
 // console.log(totalTags);
 
-const tweets = [
+const tweets1 = [
   { id: '000', likes: 5, tags: ['js', 'nodejs'] },
   { id: '001', likes: 2, tags: ['html', 'css'] },
   { id: '002', likes: 17, tags: ['html', 'js', 'nodejs'] },
   { id: '003', likes: 8, tags: ['css', 'react'] },
   { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
   ];
-  const totalTags = tweets.reduce((acc,tweet)=> {
+  const totalTags = tweets1.reduce((acc,tweet)=> {
     tweet.tags.forEach(tag => {
       acc[tag] = (acc[tag] || 0) + 1
     }
@@ -809,4 +809,4 @@ const sortProducts = (a,b) => {
     return b.price - a.price
   }
 };
-console.log(products0.sort(sortProducts));
+// console.log(products0.sort(sortProducts));
