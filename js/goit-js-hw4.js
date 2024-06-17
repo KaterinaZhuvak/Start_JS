@@ -63,7 +63,7 @@
       const fragment = document.createDocumentFragment();
       for (let i = 0; i < amount; i++) {
         const box = document.createElement('div');
-        const size = 30 + i * 10;
+        const size = 20 + i * 7;
         box.style.width = `${size}px`;
         box.style.height = `${size}px`;
         box.style.backgroundColor = `rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`;
