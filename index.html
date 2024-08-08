@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lesson.css">
     <title>Document</title>
   </head>
   <body>
@@ -68,85 +69,6 @@
   <input type="password" placeholder="password">
   <button class="btn" type="submit">Sign in</button>
 </form> -->
-<!-- <form class="form" >
-   <p>Choose a color:</p>
-   <label>
-   <input id="red" type="radio" name="color" value="red" checked />
-    Red
-   </label>
-   <label>
-     <input id="white"  type="radio" name="color" value="white" />
-    White
-   </label>
-    <label>
-    <input id="green" type="radio" name="color" value="green" />
-  Green
-</label>
-    </form> -->
-<!-- <style>
-  .box{
-    width: 250px;
-    height: 250px;
-    background: olive;
-    position: relative;
-  }
-
-  #validation-input {
-   border: 3px solid #bdbdbd;
-  }
-  
-  #validation-input.valid {
-   border-color: #4caf50;
-  }
-  
-  #validation-input.invalid {
-   border-color: #f44336;
-  }
-</style> -->
-
-
-  
-    <!-- <input type="text" class="my-input">
-    <button class="focus">Focus input</button>
-    <button class="blur">Blur input</button>
-    <hr>
-    <div class="box"></div>
-
-     <input type="text" placeholder="Ваше ім'я?" id="name-input" />
-   <h1>Привіт, <span id="name-output">незнайомець</span>!</h1> 
-<hr> -->
-   <!-- <input
- type="text"
- id="validation-input"
- data-length="6"
- placeholder="Введи 6 символів"/> -->
- <!-- task 1
- <input type="text" id="validation-input1" placeholder="Enter text">
- <input type="text" id="validation-input2" placeholder="Enter text">
- <button class="check">Перевірити</button> 
- <hr>
- < task 2 -->
-  <!-- <input type="number" id="filed1" placeholder="Enter number">
-  <input type="number" id="field2" placeholder="Enter number">
-  <button class="check-number">Check</button> 
-<hr>
-  <task 3 -->
-  <!-- <input type="text" id="text-field" placeholder="Enter some words">
-  <button class="text-btn">Check text</button>
-  <hr>
-  <! task 4 -->
-  <!-- <form>
-  <input type="number" id="diaposon1" placeholder="Enter a number">
-   <button class="number">Click</button>
-  </form>
-  <hr> -->
-  <!-- task 5 -->
-  <!-- <form>
-    <input type="name" placeholder="Enter your name" id="name">
-    <input type="email" placeholder="Eneter your email adress" id="email">
-    <input type="text" placeholder="Enter your password" id="password">
-    <button class="check-form">Send</button>
-  </form> -->
 
 
   <!-- <form>
@@ -193,7 +115,7 @@
    <!-- <input id="email" type="email">
    <input id="password" type="password">
    <button id="btn">Chek email and password</button> --> 
-   <section class="hero">
+   <!-- <section class="hero">
     <ul class="list">
       <li>text</li>
       <li>text</li>
@@ -214,9 +136,70 @@
     <p class="product__descr">Опис</p>
     <p class="product__price" >Ціна: 1111 кредитів</p>
     </article>
-    <div class="js-products"></div>
+    <div class="js-products"></div> -->
+    <!-- <h1>Event optimisation</h1>
+    <p>Поширення події</p>
+    <div id="grandparent">
+    Дідусь
+    <div id="parent">
+    Батько
+    <div id="child">Дитина</div>
+    </div>
+    </div>
+    <p>спливання</p>
+    <div id="outher">
+   Зовнійшній
+      <div id="middle">
+      Середній
+      <div id="inner">Внутрішній</div>
+      </div>
+      </div>
 
+      <p class="output">Selected color: -</p>
+      <div class="color-palette"></div>
+      <div id="buttonContainer"></div>
+      <!-- task1 -->
+      <!-- <ul id="userList">
+        <li data-id="1">
+        John Doe
+        <button class="deleteButton">Delete</button>
+        </li>
+        <li data-id="2">
+        Jane Smith
+        <button class="deleteButton">Delete</button>
+        </li>
+        <li data-id="3">
+        Bob Johnson
+        <button class="deleteButton">Delete</button>
+        </li>
+        </ul>
+         task2 
+        <h1>Task List</h1>
+        <form>
+        <label for="newTask">New task:</label>
+        <input type="text" id="newTask">
+        <button type="submit" id="addTask">Add</button>
+        </form>
+        <ul id="taskList">
+        </ul> -->
+        <div class="event-counter">
+          <div class="box">
+            <p>NO timing function</p>
+            <span class="output vanilla">0</span>
+          </div>
+          <div class="box">
+            <p>Throttled</p>
+        <span class="output throttle">0</span>
+          </div>
+          <div class="box">
+            <p>Debounced</p>
+        <span class="output debounced">0</span>
+          </div>
+        </div>
+        <script src="
+        https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
+        "></script>
+        <script src="./js/lesson.js"></script>
 
-<script src="./js/dom2.js"></script>
   </body>
 </html>
