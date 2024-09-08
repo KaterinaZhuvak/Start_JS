@@ -60,7 +60,6 @@ const chartData = {
       backgroundColor: "#2196f3",
       borderColor: "#2196f3",
       borderWidth: 1,
-      type: 'line'
     },
   ],
 };
@@ -70,5 +69,6 @@ const chartData = {
   data: chartData,
 };
 const salesChart = new Chart(
-  document.getElementById("sales-chart")
+  document.getElementById("sales-chart"),
+  config
 );
