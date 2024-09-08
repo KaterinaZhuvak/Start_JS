@@ -22,7 +22,8 @@ import { defaultModules, error, success, info  } from '@pnotify/core';
  }
 
 
- document.addEventListener('keydown', function(event) {     const pressedKey = event.key.toUpperCase();  
+ document.addEventListener('keydown', function(event) {     
+  const pressedKey = event.key.toUpperCase();  
      if (pressedKey === keys[currentKeyIndex]) {
        const successNotice = success({
              text: 'Ви натиснули правильну клавішу!',
